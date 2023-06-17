@@ -22,7 +22,7 @@ const Home= () => {
   }
 
   useEffect(() => {
-    if (searchTerm.length >= 2) {
+    if (searchTerm.length >= 3) {
       const fetchSearchResults = async (searchTerm) => {
         try {
           const response = await fetch(
@@ -114,3 +114,7 @@ const Home= () => {
 
 
 export default Home
+
+
+
+
