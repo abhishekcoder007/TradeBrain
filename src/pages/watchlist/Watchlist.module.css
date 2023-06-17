@@ -1,0 +1,82 @@
+
+
+.mainBody{
+    margin-left: 201px;
+  }
+.card {
+   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    width: 25vw;
+    margin:11px
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 5px 16px;
+  }
+  .container button{
+    width: 25%;
+    font-size: medium;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+  
+  }
+  .containerImg{
+    background-color: rgb(59, 138, 207);
+    color:rgba(255,255,255,0.8);
+    background-image: url("https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RvY2slMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border:2px solid red;
+  }
+  .mainCard{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width:30vw;
+    
+  }
+  @media screen and (max-width:900px){
+    .mainBody{
+      margin-left: 51px;
+    }
+    .mainCard{
+      grid-template-columns: auto auto;
+
+      
+    }
+    .card {
+   
+      
+      width: 41vw;
+      margin:11px
+    }
+
+  }
+
+  @media screen and (max-width:700px){
+    .mainCard{
+      grid-template-columns: auto;
+
+      
+    }
+    .card {
+   
+      
+      width: 91vw;
+      margin:11px
+    }
+    .mainBody{
+       
+        margin-left: 0px;
+      }
+    
+  }
