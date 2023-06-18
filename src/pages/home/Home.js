@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,memo } from 'react';
 import style from "./Home.module.css";
 import Navbar from '../../component/Navbar.js';
 import {useDispatch} from "react-redux";
@@ -170,12 +170,14 @@ const Home= () => {
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value.toUpperCase());
+    setSymbolData((old)=>[])
   };
 
   return (
     <div>
-        <Navbar handleInputChange={handleInputChange}/>
+        <Navbar handleInputChange={handleInputChange} value={searchTerm}/>
         {/* {searchTerm } */}
+        {symboldata.length>=1?
         <div className={style.cardNavbarall}>
         <div className={style.cardNavbar}>
         {symboldata?.map((ele, id) => (
@@ -190,9 +192,10 @@ const Home= () => {
         </React.Fragment>
       ))}
       </div>
-      </div>
-    
-      {/* {JSON.stringify(data1)} */}
+      </div>:""}
+      {/* {JSON.stringify(data1) } */}
+       {data1["Note"]?
+      JSON.stringify(data1) :""}
       <div className={style.mainBody}>
       <div className={style.mainCard}>
 
@@ -225,7 +228,7 @@ const Home= () => {
 
 
 
-export default Home
+export default memo(Home)
 
 
 

@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React, {useState,memo}from 'react';
 import style from "./Navbar.module.css";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import {NavLink}from "react-router-dom";
@@ -19,7 +19,7 @@ function Navbar(props) {
 <span><NavLink className={style.navLinkStyle} to="/">TradeBrains</NavLink></span>
    </div>
    <div className={style.mainNavmiddle}>
-<input onChange={props.handleInputChange} placeholder='Enter name of company ex-TAT' className={style.navInput} ></input>
+<input onChange={props.handleInputChange} value={props.value} placeholder='Enter name of company ex-TAT' className={style.navInput} ></input>
 </div>
 <div className={style.mainNavend}>
 <NavLink className={style.navLinkStyle} to="/">Home</NavLink>
@@ -42,4 +42,4 @@ function Navbar(props) {
   )
 }
 
-export default Navbar;
+export default memo(Navbar);
