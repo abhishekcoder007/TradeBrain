@@ -14,5 +14,5 @@
 <h3> fully responsive both for laptop, tab and mobile</h3>
 <h3>easy to use</h3>
 
-                         <h2>thank you</h2>
+<h2>thank you</h2>
 
