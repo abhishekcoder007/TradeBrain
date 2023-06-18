@@ -10,3 +10,9 @@
 <p>in watchlist you can delete data if you want</p>
 
 <p>in css i used grid and flex both align item vetically and horizontally</p>
+
+<h3> fully responsive both for laptop, tab and mobile</h3>
+<h3>easy to use</h3>
+
+                         <h2>thank you</h2>
+
