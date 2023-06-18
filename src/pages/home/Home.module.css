@@ -1,3 +1,50 @@
+*{
+  box-sizing: border-box;
+  
+}
+.cardNavbarall{
+  display: flex;
+  justify-content: center;
+}
+
+.cardNavbar{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  width: fit-content;
+  border:2px solid blue;
+  box-shadow: 2px 2px 5px black;
+
+  
+}
+.cardiitem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cardiitem button:nth-child(even){
+  padding:5px;
+   background-color: rgb(216, 90, 90);
+   color: white;
+   font-weight: 500;
+  margin-left:11px;
+}
+.cardiitem button:nth-child(odd){
+  padding:5px;
+
+  margin-left:11px;
+}
+.cardiitem p {
+  
+  margin-right: 10px;
+}
+
+
 .card {
    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -74,6 +121,11 @@
       
       width: 91vw;
       margin:11px
+    }
+
+    .cardiitem p{
+      width: 60vw;
+
     }
     
   }
